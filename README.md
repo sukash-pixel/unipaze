@@ -1,4 +1,5 @@
 🎓 UNI LOANLYTICS
+
 UNI LOANLYTICS is a web application that helps students who are unaware of which colleges offer education loans through which banks. It enables them to search college-wise loan options, compare banks, and understand loan eligibility, tenure, collateral, and documents required.
 
 🔍 Purpose
