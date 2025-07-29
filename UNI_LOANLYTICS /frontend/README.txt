@@ -1,0 +1,1 @@
+Frontend will be created as a React app. Coming up next!
