@@ -38,7 +38,7 @@ Nearest branch location integration
 1.⁠ ⁠Backend
 cd backend npm install 
 Create a .env file:
-env Copy Edit MONGO_URI=mongodb+srv://your_connection_string
+MONGO_URI=mongodb+srv://your_connection_string
 PORT=5000
 Then run:
 
