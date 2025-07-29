@@ -1,4 +1,4 @@
-[29/07/25, 3:12:18 PM] Hemaharshini: 🎓 UNI LOANLYTICS
+🎓 UNI LOANLYTICS
 UNI LOANLYTICS is a web application that helps students who are unaware of which colleges offer education loans through which banks. It enables them to search college-wise loan options, compare banks, and understand loan eligibility, tenure, collateral, and documents required.
 
 🔍 Purpose
@@ -75,5 +75,5 @@ Edit
 POST /upload
 // multipart/form-data with document field
 Compare banks:
-[29/07/25, 3:12:29 PM] Hemaharshini: POST /banks/compare
+POST /banks/compare
 // Pass array of bank IDs to compare
