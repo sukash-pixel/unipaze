@@ -36,45 +36,29 @@ Nearest branch location integration
 
 💻 How to Run Locally
 1.⁠ ⁠Backend
-bash
-Copy
-Edit
-cd backend
-npm install
+cd backend npm install 
 Create a .env file:
-
-env
-Copy
-Edit
-MONGO_URI=mongodb+srv://your_connection_string
+env Copy Edit MONGO_URI=mongodb+srv://your_connection_string
 PORT=5000
 Then run:
 
-bash
-Copy
-Edit
 npm start
 2.⁠ ⁠Frontend
-bash
-Copy
-Edit
+
 cd frontend
 npm install
 npm start
+
 🧾 Example API Routes
 Get all banks for a college:
 
-js
-Copy
-Edit
 GET /banks/:collegeName
 Upload documents (backend route):
 
-js
-Copy
-Edit
 POST /upload
+
 // multipart/form-data with document field
 Compare banks:
 POST /banks/compare
+
 // Pass array of bank IDs to compare
