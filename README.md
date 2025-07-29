@@ -1,62 +1,79 @@
-# 🎓 Unipaze – Smarter Education Loan Discovery
+[29/07/25, 3:12:18 PM] Hemaharshini: 🎓 UNI LOANLYTICS
+UNI LOANLYTICS is a web application that helps students who are unaware of which colleges offer education loans through which banks. It enables them to search college-wise loan options, compare banks, and understand loan eligibility, tenure, collateral, and documents required.
 
-> **Unipaze** is a one-stop platform that helps students find and compare education loans based on their college. Just type your college name and instantly view banks offering tailored loan options.
+🔍 Purpose
+Students often don’t know:
 
-## 🧠 Why We Built Unipaze
+Which bank offers loans for their college
 
-As a student seeking admission, I personally faced difficulties in finding reliable information about education loans. I was unaware that my own college had existing tie-ups with banks offering specialized student loans.
+Whether the loan is normal or scholarship-based
 
-Many colleges today, especially private institutions, can cost ₹5 lakhs per year or even more — and students often miss out on tailored loan options due to lack of centralized info.
+What documents are needed
 
-This inspired us to build **Unipaze** — a platform that simplifies the search for education loans by letting students:
-- 🔍 Enter their college name
-- 🏦 Instantly view all tied-up banks
-- 📋 Compare loan terms, eligibility, collateral requirements, and nearby branches
+Whether collateral is required
 
-## 🚀 Features
+👉 UNI LOANLYTICS solves this with one search, showing all available options and letting them compare features in one place.
 
-- Search for any college
-- View all banks partnered with that college
-- See loan details (type, interest, max amount, tenure, documents)
-- Compare all banks side by side
-- Get info on the nearest branch
+⚙️ Tech Stack
+Layer	Technology
+Frontend	React.js
+Backend	Node.js, Express
+Database	MongoDB
+Uploads	Multer (file upload)
+Config	dotenv
 
-## 🛠️ Tech Stack
+🧠 Features
+College name search for loan-mapped banks
 
-| Frontend | Backend | Styling  | Data Source |
-|----------|---------|----------|-------------|
-| React    | Node.js + Express | Tailwind CSS | Dummy JSON (Simulated API) |
+Show all bank details: tenure, loan type, max limit, EMI, documents, branch
 
-## 🧪 How to Run
+Upload feature for student loan documents
 
-### 📦 Prerequisites
-- Node.js v16+
-- npm
+Compare banks on key metrics
 
-### 📁 Folder Structure
-/unipaze
-├── server.js
-├── /client
-│ ├── src
-│ └── package.json
-└── README.md
+Nearest branch location integration
+
+💻 How to Run Locally
+1.⁠ ⁠Backend
+bash
+Copy
+Edit
+cd backend
+npm install
+Create a .env file:
+
+env
+Copy
+Edit
+MONGO_URI=mongodb+srv://your_connection_string
+PORT=5000
+Then run:
 
 bash
 Copy
 Edit
-
-### 🔧 Setup Instructions
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/unipaze.git
-cd unipaze
-
-# 2. Start backend
-node server.js
-
-# 3. Start frontend
-cd client
+npm start
+2.⁠ ⁠Frontend
+bash
+Copy
+Edit
+cd frontend
 npm install
 npm start
-Visit: http://localhost:3000
+🧾 Example API Routes
+Get all banks for a college:
+
+js
+Copy
+Edit
+GET /banks/:collegeName
+Upload documents (backend route):
+
+js
+Copy
+Edit
+POST /upload
+// multipart/form-data with document field
+Compare banks:
+[29/07/25, 3:12:29 PM] Hemaharshini: POST /banks/compare
+// Pass array of bank IDs to compare
