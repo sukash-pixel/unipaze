@@ -70,7 +70,7 @@ Start the server:
 npm start
 Server will run on: http://localhost:5000
 
-💻 Frontend Setup
+## 💻 Frontend Setup
 Navigate to frontend folder:
 
 cd frontend
@@ -94,7 +94,7 @@ Frontend will run on: http://localhost:3000
   "documentsRequired": "10th, 12th, Aadhar, Admission Letter",
   "branch": "Anna Nagar, Chennai"
 }
-✨ Future Enhancements
+## ✨ Future Enhancements
 🔐 Admin panel to manage bank listings.
 
 📤 File upload (for KYC/document submission).
@@ -105,5 +105,5 @@ Frontend will run on: http://localhost:3000
 
 🌍 Multilingual interface (regional support).
 
-🤝 Contributions
+##🤝 Contributions
 This was developed as part of a Hackathon project submission to help empower student financial decisions.
